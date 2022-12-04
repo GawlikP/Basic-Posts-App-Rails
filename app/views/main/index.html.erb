@@ -5,4 +5,9 @@
   <div class="flex content-center justify-center justify-items-center" />
     <%= render "shared/post_form", post: @post %>
   </div>
+  <% @posts.each do |post| %>
+    <div class="flex content-center justify-center justify-items-center p-4" />
+      <%= render "shared/post", post: post %>
+    </div>
+  <% end %>
 </div>
